@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }  
+
+  header, footer {
+    background-color: #4c7ec9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; 
+    z-index: 1000;  
+}
+
+footer.show {
+    transform: translateY(0);
+}   
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    min-height: 100hv;
+  }
+  
+  .projects, .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  ul {
+    list-style-type: none; /* Menghapus bullet points pada list */
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  
+  i {
+    margin-right: 10px; /* Memberikan jarak antara ikon dan teks */
+    color: #0d6efd; /* Memberikan warna biru pada ikon */
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit; /* Memastikan warna teks mengikuti warna ikon */
+    font-size: 16px;
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Mengganti gaya teks ketika hover */
+  }
+  
+  
+  a {
+    color: #0d6efd;
+    text-decoration: none;
+  }
+
+ .fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.justify {
+    text-align: justify;
+  }
+
+  
+  
