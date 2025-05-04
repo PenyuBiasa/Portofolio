@@ -23,18 +23,54 @@ body {
 
   footer {
     position: fixed;
-    bottom: 0;
+    bottom: 0px; /* Awalnya tersembunyi di bawah layar */
     left: 0;
     width: 100%;
-    padding: 20px;
+    color: white;
     text-align: center;
-    transition: transform 0.3s ease-in-out; 
-    z-index: 1000;  
-}
+    padding: 15px;
+    transition: transform 0.4s ease;
+    transform: translateY(100%); /* Sembunyikan */
+    z-index: 999;
+  }
+  
+  footer.show {
+    transform: translateY(0); /* Muncul dengan slide ke atas */
+  }
+  
 
-footer.show {
-    transform: translateY(0);
-}   
+.lang-switch {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+  }
+  
+  .lang-switch button {
+    display: flex;
+    align-items: center; /* Vertikal tengah */
+    gap: 6px;             /* Jarak antara ikon dan teks */
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #0d6efd;
+    color: #0d6efd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .lang-switch button img {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .lang-switch button:hover {
+    background-color: #39485f;
+    color: white;
+  }
+  
+
   
   .container {
     max-width: 960px;
@@ -107,6 +143,8 @@ footer.show {
 .justify {
     text-align: justify;
   }
+
+  
 
   
   

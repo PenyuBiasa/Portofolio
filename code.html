@@ -1,88 +1,84 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portofolio Saya</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Saya</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 </head>
 <body>
   <header>
-    <h1 class="fade-in">Halo, Saya Farrel Andika</h1>
-    <p class="fade-in">Seorang Frontend Web Developer</p>
+    <div class="lang-switch">
+      <button onclick="setLanguage('id')">
+        <img src="id-flag.png" alt="ID" width="18"> ID</button>
+      <button onclick="setLanguage('en')">
+        <img src="en-flag.webp" alt="EN" width="18"> EN</button>
+    </div>
+    <h1 data-i18n="title" class="fade-in">Halo, Saya Farrel Andika</h1>
+    <p data-i18n="subtitle" class="fade-in">Seorang Frontend Web Developer</p>
   </header>
 
   <div class="container">
     <section class="about">
-      <h2 class="fade-in">Tentang Saya</h2>
-      <p class="fade-in justify">Saya adalah seorang Frontend Web Developer pemula dengan keahlian dasar dalam HTML, CSS, dan JavaScript. Saya siap membantu membuat berbagai jenis website sederhana seperti landing page, portofolio pribadi, dan lainnya. Saya merupakan lulusan dari SMKN 2 Cikarang Barat dengan jurusan Multimedia, yang memperkuat pemahaman saya dalam desain visual dan teknologi digital.</p>
+      <h2 data-i18n="aboutTitle" class="fade-in">Tentang Saya</h2>
+      <p data-i18n="aboutText" class="fade-in justify">
+        Saya adalah seorang Frontend Web Developer pemula dengan keahlian dasar dalam HTML, CSS, dan JavaScript. Saya siap membantu membuat berbagai jenis website sederhana seperti landing page, portofolio pribadi, dan lainnya. Saya merupakan lulusan dari SMKN 2 Cikarang Barat dengan jurusan Multimedia, yang memperkuat pemahaman saya dalam desain visual dan teknologi digital.
+      </p>
     </section>
 
     <section>
-      <h2 class="fade-in">Projek</h2>
+      <h2 data-i18n="projectTitle" class="fade-in">Projek</h2>
       <div class="projects">
         <div class="card fade-in">
-          <h3 >Landing Page Produk</h3>
-          <p>Website sederhana untuk promosi produk.</p>
+          <h3 data-i18n="project1Title">Landing Page Produk</h3>
+          <p data-i18n="project1Desc">Website sederhana untuk promosi produk.</p>
           <a href="#">Lihat Demo</a>
         </div>
         <div class="card fade-in">
-          <h3>Website CV</h3>
-          <p>Website untuk menampilkan CV/Resume online.</p>
+          <h3 data-i18n="project2Title">Website CV</h3>
+          <p data-i18n="project2Desc">Website untuk menampilkan CV/Resume online.</p>
           <a href="#">Lihat Demo</a>
         </div>
       </div>
     </section>
 
     <section>
-      <h2 class="fade-in">Layanan</h2>
+      <h2 data-i18n="serviceTitle" class="fade-in">Layanan</h2>
       <div class="services">
         <div class="card fade-in">
-          <h3>Landing Page</h3>
-          <p>Membuat landing page statis dengan desain responsif.</p>
+          <h3 data-i18n="service1Title">Landing Page</h3>
+          <p data-i18n="service1Desc">Membuat landing page statis dengan desain responsif.</p>
         </div>
         <div class="card fade-in">
-          <h3>Convert Desain ke HTML</h3>
-          <p>Mengubah desain dari Figma ke HTML/CSS.</p>
+          <h3 data-i18n="service2Title">Convert Desain ke HTML</h3>
+          <p data-i18n="service2Desc">Mengubah desain dari Figma ke HTML/CSS.</p>
         </div>
         <div class="card fade-in">
-          <h3>Website Portofolio</h3>
-          <p>Membuat halaman portofolio pribadi yang menarik.</p>
+          <h3 data-i18n="service3Title">Website Portofolio</h3>
+          <p data-i18n="service3Desc">Membuat halaman portofolio pribadi yang menarik.</p>
         </div>
       </div>
     </section>
 
     <section>
-      <h2 class="fade-in">Kontak</h2>
+      <h2 data-i18n="contactTitle" class="fade-in">Kontak</h2>
       <div class="contact">
-        <p class="fade-in">Hubungi saya via:</p>
+        <p data-i18n="contactText" class="fade-in">Hubungi saya via:</p>
         <ul>
-          <li class="fade-in">
-            <!-- Ikon Email -->
-            <a href="mailto:frrl.andk@gmail.com">
-              <i class="fas fa-envelope"></i> frrl.andk@gmail.com
-            </a>
-          </li>
-          <li class="fade-in">
-            <!-- Ikon WhatsApp -->
-            <a href="https://wa.me/6285781354962">
-              <i class="fab fa-whatsapp"></i> +62 857-8135-4962
-            </a>
-          </li>
+          <li><a href="mailto:frrl.andk@gmail.com" class="fade-in"><i class="fas fa-envelope"></i> frrl.andk@gmail.com</a></li>
+          <li><a href="https://wa.me/6285781354962" class="fade-in"><i class="fab fa-whatsapp"></i> +62 857-8135-4962</a></li>
         </ul>
       </div>
     </section>
   </div>
 
-  <footer class="fade-in">
-    <p>&copy; 2025 Farrel Andika. All rights reserved.</p>
+  <footer id="pageFooter">
+    <p data-i18n="footerText">&copy; 2025 Farrel Andika. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
+  <script src="lang.js"></script>
 
 </body>
 </html>
